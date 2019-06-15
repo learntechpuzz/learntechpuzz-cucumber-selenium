@@ -18,8 +18,8 @@ public class CommonStepDef extends BaseScenario {
 	 * @throws Throwable
 	 */
 
-	@Given("^user is on homepage opened$")
-	public void user_is_on_homepage() throws Throwable {
+	@Given("^User is on Home Page$")
+	public void user_is_on_home_page() throws Throwable {
 
 		WebDriver driver = getDriver();
 		String screenSize = "desktop";
@@ -37,7 +37,7 @@ public class CommonStepDef extends BaseScenario {
 			driver.manage().window().setSize(new Dimension(768, 1024));
 		}
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(getSiteBaseUrl());
 
 	}

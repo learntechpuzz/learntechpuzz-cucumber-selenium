@@ -50,7 +50,7 @@
 
 					<systemPropertyVariables>
 						<!-- Your Project Site Url -->
-						<siteUrl>http://automationpractice.com/index.php</siteUrl>
+						<siteUrl>http://www.learntechpuzz.com</siteUrl>
 						<!-- You can define more System.getProperty() here -->
 					</systemPropertyVariables>
 

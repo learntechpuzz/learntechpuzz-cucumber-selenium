@@ -1,9 +1,11 @@
 @focus
-Feature: Login Feature
-Verify if user is able to Login in to the site
+Feature: learntechpuzz Submit Feedback
+Verify if user is able to submit feedback
 
-  Scenario: Login as a authenticated user
-    Given user is on homepage opened
-     When user navigates to Login Page
-      And user enters username and Password
-     Then success message is displayed
+  Scenario: Submit Feedback
+    Given User is on Home Page
+     When User navigate to Feedback Page
+      And User enter the following data and click on Submit button
+      | firstName | lastName | email          | mobile     | comments | 
+      | Guest     | User     | guest@mail.com | 9677042707 | Good     | 
+     Then Success message is displayed
