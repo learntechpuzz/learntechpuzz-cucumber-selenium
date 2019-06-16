@@ -14,7 +14,9 @@ public class FeedbackPageScenario extends BaseScenario {
 
 	@When("^User navigate to Feedback Page$")
 	public void user_navigates_to_Feedback_Page() throws Throwable {
-		driver.navigate().to("http://learntechpuzz.com/feedback");
+		driver.findElement(By.partialLinkText("Action")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("feedbackLink")).click();
 	}
 
 	@When("^User enter the following data and click on Submit button$")
